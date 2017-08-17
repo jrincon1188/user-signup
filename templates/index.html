@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+    </head>
+    <body>
+        <h1>Signup</h1>
+            <form action='/' method='POST'>
+                <table>
+                <tr>
+                    <td><label for="username">Username</label>
+                    <input id="username" name="username" value='{{username}}' type= "text"></input>
+                    <span class='error'>{{username_error}}</span>
+                    </td>
+                <tr>
+                </tr>
+                    <td>
+                    <label for= "password">Password</label>
+                    <input id="password" name="password" value= '{{password}}' type= "password">
+                    <span class='error'>{{password_error}}</span>
+                    </td>
+                <tr>
+                </tr>
+                    <td>
+                    <label for="verify">Verify Password</label>
+                    <input id= "verify" name="verify" value= '{{verify}}' type= "password">
+                    <span class='error'>{{verify_error}}</span>
+                    </td>
+               <tr>
+               </tr>
+                    <td>
+                    <label for="email">Email (optional)</label>
+                    <input id="email" name= "email" value= '{{email}}' type= "text">
+                    <span class='error'>{{email_error}}</span>
+                    </td>
+
+              </table>
+                    <input type= "submit" value= "submit">
+
+            </form>
+       </body>
+</html>
